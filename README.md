@@ -10,6 +10,3 @@ Repositório da iniciação ciêntifica
 - [Desafio 1](https://github.com/victorfernandesraton/ThingYota/blob/master/Projetos/Desafio_1/)
 - [LDR](https://github.com/victorfernandesraton/ThingYota/blob/master/Projetos/LDR/)
 - [SR](https://github.com/victorfernandesraton/ThingYota/blob/master/Projetos/SR_BASIC/)
-
-
-
