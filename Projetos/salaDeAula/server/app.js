@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes/index'); // rota index
+var usersRouter = require('./routes/users'); // rota usuario
+var clientRouter = require('./routes/client'); // client
+var arduinoRouter = require('./routes/arduino'); // arduino
 
 var app = express();
 
@@ -19,8 +21,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// Lista de rotas
+app.use('/', indexRouter); // index;
+app.use('/users', usersRouter); // users
+app.use('/client', clientRouter); // client
+app.use('/arduino',arduinoRouter); // arduino
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
