@@ -23,9 +23,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Lista de rotas
 app.use('/', indexRouter); // index;
-app.use('/users', usersRouter); // users
+app.use('/user', usersRouter); // users
 app.use('/client', clientRouter); // client
 app.use('/arduino',arduinoRouter); // arduino
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
