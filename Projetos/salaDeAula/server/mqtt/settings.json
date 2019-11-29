@@ -1,0 +1,7 @@
+{
+    "mqtt" : {
+        "client" : {
+            "url" : "url/urlmqttclient"
+        }
+    }
+}
